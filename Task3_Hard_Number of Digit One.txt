@@ -1,0 +1,15 @@
+class Solution {
+    public int countDigitOne(int n) {
+        
+        int count=0;
+        
+        for(int i=1; i<=n; i++)
+        {
+            String str = String.valueOf(i);
+            count = count + str.split("1",-1) . length - 1;
+        }
+        return count;
+    }
+}
+
+//13==> 1,10,11,12,13

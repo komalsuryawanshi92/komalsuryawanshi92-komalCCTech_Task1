@@ -1,0 +1,18 @@
+class Solution {
+    public int divide(int dividend, int divisor) {
+       
+        
+         if (dividend == Integer.MIN_VALUE && divisor == -1) 
+        return Integer.MAX_VALUE;     
+    
+    return dividend/divisor;
+        
+//         if(divisor < Integer.MAX_VALUE || divisor>Integer.MIN_VALUE)
+//             {
+//                 res=Math.abs(dividend) / Math.abs(divisor);
+//             }
+     
+//         return res;
+     }
+}
+
